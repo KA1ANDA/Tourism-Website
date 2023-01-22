@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Travel Agency</title>
+</head>
+<body>
+
+<!-- NAVIGACIA -->
+  <header id="headeri">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logotipi" href="#">
+          <div class="logo">
+          </div></a>
+          <h3 class="mr-2">Travel Agency</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto menu shadow rounded bg-light">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#headeri">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">places</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Contact</a>
+              <ul class="dropdown-menu chamoshla">
+                <li><a href="#company-information" class="dropdown-item">About Company</a></li>
+                <li><a href="#footeri" class="dropdown-item">Contact Information</a></li>
+              </ul>
+            </li>
+          </ul>
+       
+          <!-- modal fanjara log in -->
+          <button type="button" class="btn btn-default log-in" data-bs-toggle="modal" data-bs-target="#modali">
+            <h5>Log In <i class="bi bi-box-arrow-in-right" style="font-size:20px;"></i></h5>
+          </button>
+
+          <div class="modal fade" id="modali" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-hidden"></h5>
+                    <i id="modal-reset" class="bi bi-x-lg close" data-bs-dismiss="modal" type="button"></i>
+                </div>
+                <div class="modal-body">
+                  <form class="p-3">
+                    <h1 class="text-center text-uppercase mb-4">log in</h1>
+                    <hr>
+                    <div class="form-group m-3">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control bg-light" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group  m-3">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control bg-light" id="password" placeholder="Password">
+                    </div>
+                    <div class=" registracia-soc">
+                      <button class="btn btn-primary btn-lg facebooki shadow-lg"><i class="bi bi-facebook"></i></button>
+                      <button class="btn btn-primary btn-lg googli shadow-lg"><i class="bi bi-google"></i></button>
+                    </div>
+                    <div class="form-check  m-3">
+                      <input type="checkbox" class="form-check-input" id="check1">
+                      <label class="form-check-label check" for="check1">Agree With Our Terms</label>
+                    </div>
+                    <div class="submit-div">
+                    <button type="button" class="btn btn-primary btn-lg" id="submit"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="other-sign">
+                      <a href="#" class="text-uppercase">can't sign in?</a>
+                      <!-- MEORE MODALI gilaki -->
+                      <a href="#" id="btn-modal2" class="text-uppercase close" data-bs-dismiss="modal">create account</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </nav>
+    <!-- MEORE MODALI PANJARA -->
+    <div id="mymodal2">
+      <div class="modal-shigtavsi">
+        <div class="x">
+          <i class="bi bi-x-lg daxurva"></i>
+        </div>  
+        <form class="p-3">
+          <h1 class="text-center text-uppercase mb-4">registration</h1>
+          <hr>
+          <div class="saxeli-gvari d-flex">
+            <div class="form-group m-3">
+              <label for="name">Name</label>
+              <input type="text" class="form-control bg-light" id="name"  placeholder="Enter Name">
+            </div>
+            <div class="form-group  m-3">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control bg-light" id="lastName" placeholder="Enter Last Name">
+            </div>
+          </div>
+          <div class="form-group m-3">
+            <label for="email2">Email address</label>
+            <input type="email" class="form-control bg-light" id="email2" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group m-3">
+            <label for="date">Select Your Birth Date</label>
+            <input type="date" class="form-control bg-light" id="date">
+          </div>
+          <div class="parolebi d-flex">
+            <div class="form-group  m-3">
+              <label for="password2">Password</label>
+              <input type="password" class="form-control bg-light" id="password2" placeholder="Password">
+            </div>
+            <div class="form-group  m-3">
+              <label for="re-password">Confirm Password</label>
+              <input type="password" class="form-control bg-light" id="re-password" placeholder="Confirm Password">
+            </div>
+          </div>
+          <div class=" registracia-soc">
+            <button class="btn btn-primary btn-lg facebooki shadow-lg"><i class="bi bi-facebook"></i></button>
+            <button class="btn btn-primary btn-lg googli shadow-lg"><i class="bi bi-google"></i></button>
+          </div>
+          <div class="form-check  m-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label check" for="exampleCheck1">Agree With Our Terms</label>
+          </div>
+          <div class="submit-div">
+          <button type="button" id="submit-registration" class="btn btn-primary btn-lg"><i class="bi bi-arrow-right"></i></button>
+          </div>
+          <div class="other-sign">
+            <a href="#" class="text-uppercase">need help?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MTAVARI GVERDI -->
+    <div class="container main">
+      <div class="row">
+        <div class="col-12">  
+          <div class="backgroundi">
+            <h1 class="text-center text-white main-text">Time For An Adventure ,  Let’s go make some memories</h1>
+          </div>  
+          <a href="" class="btn btn-lg btn-default main-btn">Travel</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!-- ABOUTI -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center text-uppercase pt-2 pb-5  mb-5">about us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6 col-xs-12 mtliani_rgoli">
+          <div class="info_circle"><i class="bi bi-airplane-fill"></i></div>
+          <h5 class="text-center text-capitalize">chip flights</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-calendar-event-fill"></i></i></div>
+          <h5 class="text-center text-capitalize">Events</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-car-front-fill"></i></div>
+          <h5 class="text-center text-capitalize">transport support</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-card-image"></i></div>
+          <h5 class="text-center text-capitalize">pictures of our adventures</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-cart4"></i></div>
+          <h5 class="text-center text-capitalize">travel Equipment</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-chat-heart-fill"></i></div>
+          <h5 class="text-center text-capitalize">reviews</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-cash-coin"></i></div>
+          <h5 class="text-center text-capitalize">tourist tour</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="text-center text-capitalize">places to visit</h5>
+          <div class="line"></div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12">
+          <div class="info_circle"><i class="bi bi-flag-fill"></i></div>
+          <h5 class="text-center text-capitalize">report a problem</h5>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- TUREBI SHETAVAZEBEBI -->
+<section id="foni" class="tours p-5" style="background-color:#F6D0B7;">
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="text-center text-uppercase pt-2 pb-5 mt-5 mb-5">tour suggestions</h2>
+    </div>
+    <div class="row m-1">
+      <div id="diving" class="col-xl-4  col-xs-12 shadow-lg p-0 pirpita mx-auto mt-5 rounded ">
+        <div class="surati zgva rounded"></div>
+        <div class="agwera p-5"><h5 class="text-center text-capitalize pb-3">Diving</h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint unde ipsa velit esse repellendus officiis, culpa numquam, quaerat molestiae, vel nisi ab sunt maiores. Quas quos minus totam veritatis facere.</div>
+        <div class="line"></div>
+        <a href="#" class="btn btn-lg btn-default text-capitalize other-btn mb-5 shadow">more information</a>
+      </div>
+      <div id="jungle"class="col-xl-4  col-xs-12 shadow-lg p-0 pirpita mx-auto mt-5 rounded">
+        <div class="surati junglebi rounded"></div>
+        <div class="agwera p-5"><h5 class="text-center text-capitalize pb-3 ">Jungle Trip</h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint unde ipsa velit esse repellendus officiis, culpa numquam, quaerat molestiae, vel nisi ab sunt maiores. Quas quos minus totam veritatis facere.</div>
+        <div class="line"></div>
+        <a href="#" class="btn btn-lg btn-default text-capitalize other-btn mb-5 shadow">more information</a>
+      </div>
+      <div id="climbing" class="col-xl-4  col-xs-12 shadow-lg p-0 pirpita mx-auto mt-5 rounded">
+        <div class="surati mta-cocva rounded"></div>
+        <div class="agwera p-5"><h5 class="text-center text-capitalize pb-3">Climbing</h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint unde ipsa velit esse repellendus officiis, culpa numquam, quaerat molestiae, vel nisi ab sunt maiores. Quas quos minus totam veritatis facere.</div>
+        <div class="line"></div>
+        <a href="#" class="btn btn-lg btn-default text-capitalize other-btn mb-5 shadow">more information</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KOMPANIIS SHESAXEB -->
+<section class="about-company" id="company-information">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase mb-3 pt-5">about our company</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-8 col-lg-12 mt-5">
+        <h4>Travel Agency</h4>
+        <p>Your trusted travel experts in Seychelles!</p>
+        <p>Located off the East coast of Africa in the middle of the Indian Ocean, the Seychelles is an archipelago of 115 islands. Well-known for its breathtaking beauty, the Seychelles’ crystal-clear waters, pristine palm-fringed beaches, lush mountain views are a delight for the senses- a stunning world on land and rich diversity under water.</p>
+        <p>At Ocean Blue Travel, we are committed to making your dream vacation a reality. Our wide range of services comprising of transfers, accommodation, guided tours and excursions are uniquely tailored to provide you with the true Seychelles experience.</p>
+        <p>For the discerning traveler, relish our services and well-planned itineraries that highlight luxury at its best. Our fleet includes luxurious SUVs, minivans and minibuses for optimized comfort, discretion and safety. We are dedicated to make your holiday a luxurious experience as defined by you- whether you prefer an escapade on a private island, lavish villa or bespoke yacht cruise, our team is guaranteed to give you the best of the best.</p>
+      </div> 
+      <div class="col-xl-4 col-sm-12 ml-5 text-center">
+        <img src="../Sakurso/imgs/company-building.png" alt="company building" class="img-fluid building-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALEREA -->
+<section class="gallery" style="background-color:#F6D0B7;">
+  <div class="row">
+    <div class="col-12 ">
+      <h2 class="text-center text-uppercase mb-5 pt-5">Pictures Of Our Adventures</h2>
+    </div>
+  </div>
+ <div class="container"> 
+    <div class="col-xl-12 col-sm-12 p-5">
+      <div id="karuseli" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-lg">
+          <div class="carousel-item active">
+            <img src="../Sakurso/imgs/surati1.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati2.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati3.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati4.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati5.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati6.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati7.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati8.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati10.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati11.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati13.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati15.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati16.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Sakurso/imgs/surati17.jpg" class="d-block w-100" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#karuseli" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#karuseli" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+
+<!-- KOMENTAREBI -->
+<section class="reviews">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center text-uppercase m-5">reviews</h2>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-xl-3 col-md-6 col-xs-12  shadow-lg review rounded mx-auto mt-5 overflow-auto mb-5">
+        <div class="profile1"></div>
+        <h2 class="text-capitalize m-5 text-center">david smith</h2>
+        <div><h4 class="p-4">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla facilis, voluptate, hic tempore aspernatur nostrum quibusdam illum ipsum alias laboriosam </p>
+          <p>Lorem ipsum dolor sit.</p>
+        </h4><hr class="line"></div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-xs-12  shadow-lg review rounded mx-auto mt-5 overflow-auto mb-5">
+        <div class="profile2"></div>
+        <h2 class="text-capitalize m-5 text-center">sara meyer</h2>
+        <div><h4 class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, veniam obcaecati nemo ea, ipsa nihil minus qui quisquam culpa esse delectus labore dolores quis minima ipsum praesentium! Totam, quibusdam cupiditate!</h4><hr class="line"></div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-xs-12  shadow-lg review rounded mx-auto mt-5 overflow-auto mb-5">
+        <div class="profile3"></div>
+        <h2 class="text-capitalize m-5 text-center">bella smith</h2>
+        <div><h4 class="p-4">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sapiente cum atque debitis quos ex laborum facere hic sunt,</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam consequuntur debitis a deserunt unde sunt excepturi sequi quaerat atque adipisci omnis ratione id fuga, molestias perspiciatis laborum voluptatem officiis.</p>
+        </h4><hr class="line"></div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-xs-12  shadow-lg review rounded mx-auto mt-5 overflow-auto mb-5">
+        <div class="profile4"></div>
+        <h2 class="text-capitalize m-5 text-center">emma hoffman</h2>
+        <div><h4 class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, veniam obcaecati nemo ea, ipsa nihil minus qui quisquam culpa esse delectus labore dolores quis minima ipsum praesentium! Totam, quibusdam cupiditate!</h4><hr class="line"></div>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col">
+        <a href="#" class="btn btn-lg btn-default text-capitalize other-btn mb-5 mt-5 shadow">Write Your Review</a>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- FOOTERI -->
+<footer class="bg-dark text-center" id="footeri">
+  <div class="container">
+    <h3 class="text-muted pt-5 pb-2">Get connected with us on social networks</h3>
+      <section class="social">
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#"
+          ><i class="bi bi-facebook"></i></a>
+
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#"
+          ><i class="bi bi-twitter"></i></a>
+
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#"
+          ><i class="bi bi-instagram"></i></a>
+
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#"
+          ><i class="bi bi-linkedin"></i></a>
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: green;"
+          href="#"
+          ><i class="bi bi-whatsapp"></i></a>
+      </section>
+  </div>
+</footer>
+
+  
+
+
+  <script src="js/code.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+</body>
+</html>
