@@ -145,15 +145,17 @@ submitRegistration.onclick = function(){
 //////////////////////////////////////////////////////////////////
 // TOURS FUNQCIA
 diving.addEventListener('mouseover', function () {
-  foni.style.backgroundImage = "url('../Sakurso/imgs/sea-background.jpg')";
+  foni.style.backgroundImage = "url('imgs/sea-background.jpg')";
   foni.style.backgroundSize = "cover";
+  foni.style.backgroundPosition = "center";
   foni.style.backgroundAttachment = "fixed";
 })
 
 
 
 jungle.addEventListener('mouseover', function () {
-  foni.style.backgroundImage = "url('../Sakurso/imgs/jungle-background.jpg')";
+  foni.style.backgroundImage = "url('imgs/jungle-background.jpg')";
+  foni.style.backgroundPosition = "center";
   foni.style.backgroundSize = "cover";
   
   ;
@@ -163,6 +165,8 @@ jungle.addEventListener('mouseover', function () {
 
 
 climbing.addEventListener('mouseover', function () {
-  foni.style.backgroundImage = "url('../Sakurso/imgs/mountain-background.jpg')";
+  foni.style.backgroundImage = "url('imgs/mountain-background.jpg')";
   foni.style.backgroundSize = "cover";
+  foni.style.backgroundPosition = "center";
+
 })
