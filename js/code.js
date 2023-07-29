@@ -146,6 +146,8 @@ submitRegistration.onclick = function(){
 // TOURS FUNQCIA
 diving.addEventListener('mouseover', function () {
   foni.style.backgroundImage = "url('imgs/sea-background.jpg')";
+  foni.style.transition = '1s'
+  foni.style.opacity = '100%'
   foni.style.backgroundSize = "cover";
   foni.style.backgroundPosition = "center";
   foni.style.backgroundAttachment = "fixed";
@@ -157,6 +159,8 @@ jungle.addEventListener('mouseover', function () {
   foni.style.backgroundImage = "url('imgs/jungle-background.jpg')";
   foni.style.backgroundPosition = "center";
   foni.style.backgroundSize = "cover";
+  foni.style.transition = '1s'
+  foni.style.opacity = '100%'
   
   ;
   
@@ -168,5 +172,7 @@ climbing.addEventListener('mouseover', function () {
   foni.style.backgroundImage = "url('imgs/mountain-background.jpg')";
   foni.style.backgroundSize = "cover";
   foni.style.backgroundPosition = "center";
+  foni.style.transition = '1s'
+  foni.style.opacity = '100%'
 
 })
