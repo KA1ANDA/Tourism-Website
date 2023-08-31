@@ -32,8 +32,9 @@ ul{
   margin:0 50px;
   background-color:transparent ;
   color:white;
-  border-radius: 5%;
+  border-radius: 10px;
   transition: 0.5s;
+
 
 }
 
@@ -42,7 +43,7 @@ ul{
   margin-right:0 50px;
   background-color: rgb(221, 129, 96) ;
   color:white;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .log-in{
@@ -387,6 +388,19 @@ header{
   margin:0px auto 30px;
   background-color: #A2BF59;
 }
+
+
+@media (max-width:425px){
+  .pirpita{
+    width: auto;
+  }
+
+  .agwera{
+    height: 300px;
+    overflow-y: auto;
+  }
+}
+
 
 /* ABOUT COMPANY */
 
